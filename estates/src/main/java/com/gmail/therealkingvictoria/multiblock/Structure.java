@@ -32,7 +32,21 @@ public class Structure {
 		} // if
 		
 		multiBlock.addStructure(this);
-	} // Structure
+	} // Structure(MultiBlock, Location, BlockPlaceEvent)
+	
+	/**
+	 * Loads a Structure of a MultiBlock that already exists
+	 * @param multiBlock kind of MultiBlock that this Structure is
+	 * @param location Location of Structure
+	 * @param health int health of the structure
+	 */
+	public Structure(MultiBlock multiBlock, Location location, int health) {
+		this.multiBlock = multiBlock;
+		this.location = location;
+		this.health = health;
+		
+		multiBlock.addStructure(this);
+	} // Structure(MultiBlock, Location, int)
 
 	/** Unimplemented */
 	public boolean build() { return false; } // build

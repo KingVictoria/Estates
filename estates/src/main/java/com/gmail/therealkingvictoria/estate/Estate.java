@@ -17,6 +17,12 @@ public class Estate {
 		this.location = location;
 
 		structure = new Structure(multiBlock, location, event);
-	} // Estate
+	} // Estate(Sting, Location, MultiBlock, BlockPlaceEvent)
+	
+	Estate(String name, Location location, Structure structure) {
+		this.name = name;
+		this.location = location;
+		this.structure = structure;
+	} // Estate(String, Location, Structure)
 
 } // class
