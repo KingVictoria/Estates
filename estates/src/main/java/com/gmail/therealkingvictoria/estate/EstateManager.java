@@ -68,7 +68,7 @@ public class EstateManager {
 			World world = Bukkit.getWorld(locationSection.getString("world"));
 			Location location = new Location(world, x, y, z);
 			
-			MultiBlock multiBlock = MultiBlockManager.getByName(estateSection.getString("name"));
+			MultiBlock multiBlock = MultiBlockManager.getByName(estateSection.getString("multiBlock"));
 			Structure structure = multiBlock.getByLocation(location);
 
 			configEstates.add(new Estate(name, location, structure));

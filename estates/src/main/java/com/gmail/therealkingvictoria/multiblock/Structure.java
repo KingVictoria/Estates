@@ -4,7 +4,6 @@ import org.bukkit.Location;
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
 import org.bukkit.event.block.BlockPlaceEvent;
-import org.bukkit.inventory.ItemStack;
 
 /**
  * A specific MultiBlock Structure that exists in the world representing an Estate or Module
@@ -82,11 +81,11 @@ public class Structure {
 	} // getLocation
 	
 	/**
-	 * Gets the base block of this Structure's MultiBlock as an ItemStack
+	 * Gets the base block's name of this Structure's MultiBlock as a String
 	 * @return ItemStack base block
 	 */
-	public ItemStack getBase() {
-		return multiBlock.getBase();
+	public String getBase() {
+		return multiBlock.getBaseItem();
 	} // getBase
 
 } // class

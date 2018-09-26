@@ -13,7 +13,7 @@ public class MultiBlock {
 	
 	private String name;
 	private List<Structure> structures;
-	private ItemStack base;
+	private String baseItem;
 	private Schematic schematic;
 	
 	/**
@@ -22,10 +22,10 @@ public class MultiBlock {
 	 * @param structures List of Structures of this MultiBlock
 	 * @param base ItemStack of base block for this MultiBlock
 	 */
-	public MultiBlock(String name, List<Structure> structures, ItemStack base, Schematic schematic) {
+	public MultiBlock(String name, List<Structure> structures, String baseItem, Schematic schematic) {
 		this.name = name;
 		this.structures = structures;
-		this.base = base;
+		this.baseItem = baseItem;
 		this.schematic = schematic;
 	} // MultiBlock
 	
@@ -60,8 +60,8 @@ public class MultiBlock {
 	 * Gets the base block of the MultiBlock as an ItemStack
 	 * @return ItemStack base block
 	 */
-	public ItemStack getBase() { 
-		return base; 
+	public String getBaseItem() { 
+		return baseItem; 
 	} // getBase
 	
 	/**
